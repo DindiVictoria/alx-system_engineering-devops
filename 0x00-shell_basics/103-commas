@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | grep -v '^\.\/\(\.\|..\)$' | LC_ALL=C sort -d -k1.1 | awk 'BEGIN {ORS=","} {print $0} END {print "\n"}'
+ls -amvp
