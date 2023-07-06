@@ -1,4 +1,2 @@
 #!/bin/bash
-sudo apt-get install telnet -y << EOF
-open towel.blinkenlights.nl
-EOF
+telnet towel.blinkenlights.nl
