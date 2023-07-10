@@ -1,7 +1,2 @@
 #!/bin/bash
-message=""
-while IFS= read -r line; do
-  first_letter=$(echo "$line" | cut -c 1)
-  message="${message}${first_letter}"
-done
-echo "$message"
+cut -c 1 | tr -d '\n'
